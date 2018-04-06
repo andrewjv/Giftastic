@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Giftastic</title>
+    <!-- css file -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
 </head>
+
 <body>
-    <div id="artist-buttons">
-
+    <!-- Row for buttons -->
+    <div class="row">
+        <!-- div to store appended buttons -->
+        <div class='col-md-12' id="artist-buttons">
+        </div>
     </div>
-
-    <form action="" id="artist-form">
-        <label for="artist-input">Add your favorite music artist</label>
-        <input type="text" id="artist-input"><br>
-        <input id="add-artist" type="button" value="submit">
-    </form>
-
-    <div id="gifs">
-         
+    <div class="row">
+        <!-- buttons appended here -->
+        <div id="gifs" class="col-md-8">
+        </div>
+        <!-- input form for adding new artist -->
+        <div class="col-md-4" id='form'>
+            <form action="" id="artist-form">
+                <label for="artist-input">Add your favorite music artist</label>
+                <input type="text" id="artist-input">
+                <br>
+                <input id="add-artist" type="button" value="submit">
+            </form>
+        </div>
     </div>
-    
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="assets/javascript/app.js"></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- javascript -->
+    <script src="assets/javascript/app.js"></script>
 
 </body>
+
 </html>

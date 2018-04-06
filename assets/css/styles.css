@@ -1,8 +1,21 @@
 img {
     float: left;
+    margin: 10px;
 }
 
 p {
-    margin-right: 0px;
-    float: left;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#form{
+    float: right;
+}
+
+button{
+    background-color: olivedrab;
+}
+
+body {
+    overflow: auto;
 }
